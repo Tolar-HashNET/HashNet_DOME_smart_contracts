@@ -1,0 +1,12 @@
+.tsbuildinfo
+.npm
+.yarn-integrity
+
+node_modules/
+dist/
+contract_bin/*.abi
+contract_bin/*.bin
+
+.idea/
+
+.yarn

@@ -1,0 +1,36 @@
+{
+  "name": "hashnet-dome-smart-contract",
+  "description": "Tolar HashNet ",
+  "homepage": "https://github.com/Tolar-HashNET/HashNet_DOME_smart_contracts#readme",
+  "bugs": {
+    "url": "https://github.com/Tolar-HashNET/HashNet_DOME_smart_contracts/issues"
+  },
+  "contributors": [
+    "Tolar <info@tolar.io>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Tolar-HashNET/HashNet_DOME_smart_contracts.git"
+  },
+  "scripts": {
+    "build": "tsc -project tsconfig.json",
+    "build:contract": "solcjs --evm-version istanbul --abi --bin --overwrite --base-path . --output-dir ./contract_bin  ./contract/EventManagerDOMEv1.sol",
+    "dev": "ts-node-dev --respawn ./src/index.ts"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.1.0-solc-0.7",
+    "@types/node": "^22.13.13",
+    "solc": "^0.7.6",
+    "ts-node": "10.9.2",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@tolar/web3-plugin-tolar": "^0.9.0",
+    "ts-command-line-args": "^2.5.1",
+    "ts-retry-promise": "^0.8.1",
+    "web3": "^4.2.2",
+    "web3-eth-accounts": "^4.2.1"
+  },
+  "packageManager": "yarn@4.5.1+sha512.341db9396b6e289fecc30cd7ab3af65060e05ebff4b3b47547b278b9e67b08f485ecd8c79006b405446262142c7a38154445ef7f17c1d5d1de7d90bf9ce7054d"
+}
