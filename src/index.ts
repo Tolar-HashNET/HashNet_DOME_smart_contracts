@@ -80,7 +80,7 @@ async function main() {
 
         const retryGetTx = retryDecorator(
             (txHash: string) => web3.tolar.getTransaction(txHash),
-            { timeout: 30_000, delay: 2000 },
+            { timeout: 60_000, delay: 2000 },
         );
 
         const txDeployResponse: RpcTxResponse = await retryGetTx(txDeployHash);
