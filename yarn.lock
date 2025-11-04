@@ -138,10 +138,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protobuf-ts/runtime@npm:^2.9.4":
-  version: 2.9.6
-  resolution: "@protobuf-ts/runtime@npm:2.9.6"
-  checksum: 10/676c295fa09555905b574cada64b630dfd6d85d1637139eea0226902b155c2ddac56f356d09691324a3a9c3fc8a738f410b83972984319accb28259a4ed63a8f
+"@protobuf-ts/runtime@npm:>=2.9.4":
+  version: 2.11.1
+  resolution: "@protobuf-ts/runtime@npm:2.11.1"
+  checksum: 10/888b963a0b2b26c0b5f77d411b99bfc80068faa89e287efeede2e7686f1b0fea09fc5f0cf7e6be148728f2acf9c05ec7b5814f6633da6cdc810895677b2e68f5
   languageName: node
   linkType: hard
 
@@ -173,16 +173,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tolar/web3-plugin-tolar@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "@tolar/web3-plugin-tolar@npm:0.9.0"
+"@tolar/web3-plugin-tolar@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@tolar/web3-plugin-tolar@npm:1.0.0"
   dependencies:
-    "@protobuf-ts/runtime": "npm:^2.9.4"
-    ethereum-cryptography: "npm:^2.0.0"
+    "@protobuf-ts/runtime": "npm:>=2.9.4"
+    ethereum-cryptography: "npm:^2.1.2"
   peerDependencies:
     web3: ">= 4.0.3"
     web3-eth-accounts: ">=4.0.3"
-  checksum: 10/9995c2e3761a1b430ff105f164d18b514bc1a9aeb26b8de6ee6e64522d58230f3596d8cd9abed77313632ffb327a71e64276843454926c96f22fa978bb0129cd
+  checksum: 10/974c7deedcdddfd9e9e5d849f5022280dba778d2d6dbc5c4dadb49692ee55b4f2da915fd940096218c27c7e45836beecf567286f5ca66de5e4fb44347baf1d8d
   languageName: node
   linkType: hard
 
@@ -762,7 +762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethereum-cryptography@npm:^2.0.0":
+"ethereum-cryptography@npm:^2.0.0, ethereum-cryptography@npm:^2.1.2":
   version: 2.2.1
   resolution: "ethereum-cryptography@npm:2.2.1"
   dependencies:
@@ -1015,7 +1015,7 @@ __metadata:
   resolution: "hashnet-dome-smart-contract@workspace:."
   dependencies:
     "@openzeppelin/contracts": "npm:^3.1.0-solc-0.7"
-    "@tolar/web3-plugin-tolar": "npm:^0.9.0"
+    "@tolar/web3-plugin-tolar": "npm:^1.0.0"
     "@types/node": "npm:^22.13.13"
     solc: "npm:^0.7.6"
     ts-command-line-args: "npm:^2.5.1"
